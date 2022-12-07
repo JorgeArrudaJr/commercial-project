@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+}
+body header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3em 0;
+}
+header .toplogo {
+    width: 10%;
+    margin-right: 17em;
+}
+.toplogo a {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #576975;
+    text-decoration: none;
+}
+.toplogo img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+nav a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #576975;
+    padding: 0 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.containerMosaico .contentMosaico {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contentMosaico .mosaico {
+    width: 14%;
+    margin: 0 0.3em;
+}
+.mosaico img {
+    width: 100%;
+    object-fit: contain;
+}
+main .contentBoxs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -1.2em;
+    text-align: center;
+    align-items: center;
+}
+.loremBox:nth-of-type(1) {
+    width: 20%;
+    background-color: #576975;
+}
+.loremBox:nth-of-type(2) {
+    width: 25%;
+    background-color: #688293;
+}
+.loremBox:nth-of-type(3) {
+    width: 20%;
+    background-color: #576975;
+}
+.loremBox h4 {
+    color: #fff;
+    margin: 0.5em 0;
+}
+.loremBox p {
+    color: #fff;
+    line-height: 1.5;
+    padding-bottom: 0.7em;
+}
+.containerPerfil .contentPerfil {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+.contentPerfil .imgPerfil {
+    width: 35%;
+}
+.imgPerfil img {
+    width: 100%;
+}
+.contentPerfil .textPerfil {
+    width: 30%;
+}
+.textPerfil h3 {
+    text-align: center;
+    color: #688293;
+    padding-bottom: 0.7em;
+}
+.textPerfil p {
+    margin: 0 2%;
+    line-height: 1.5;
+    text-align: justify;
+}
+.containerServices h2 {
+    font-size: 2rem;
+    color: #8b8693;
+    text-align: center;
+    padding-top: 4em;
+}
+.containerServices .contentServices {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #8B8693;
+    line-height: 1.5;
+}
+.contentServices .loremServices {
+    margin: 1.3em 1.3em;
+}
+.containerContato .contentContato {
+    display: flex;
+    justify-content: center;
+    padding-top: 4em;
+}
+.contentContato form {
+    width: 40%;
+    color: #4F4F4F;
+}
+form input {
+    margin: 1em 0;
+    outline: none;
+}
+form input[type=text] {
+    width: 93%;
+    height: 3em;
+    outline: none;
+}
+form .flex {
+    display: flex;
+}
+form .form {
+    width: 100%;
+}
+.form input[type=email] {
+    width: 100%;
+    height: 3em;
+    outline: none;
+}
+.form input[type=telefone] {
+    width: 82%;
+    height: 3em;
+    margin: 1em 1em;
+    outline: none;
+}
+form textarea {
+    display: block;
+    margin: 1.8em auto;
+    width: 60%;
+    height: 9em;
+    outline: none;
+}
+form input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: 3em;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    background-color: #576975;
+}
+.containerFooter .contentFooter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6em;
+    padding-top: 3em;
+    padding: 3em 0;
+    color: #fff;
+    background-color: #576975;
+}
+.contentFooter > div {
+    margin: 0 2%;
+}
+@media screen and (max-width: 767px) {
+    header .toplogo {
+        position: absolute;
+        left: 0.7em;
+        padding-bottom: 1.1em;
+    }
+    .toplogo img {
+        width: 50%;
+    }
+    .toplogo a {
+        font-size: 2rem;
+    }
+    header nav {
+        position: relative;
+        top: 3em;
+        margin: 2%;
+        margin-top: 1em;
+        background-color: #688293;
+    }
+    nav a {
+        font-size: 0.7rem;
+        color: #fff;
+        line-height: 2.0;
+    }
+    .containerBoxs .contentBoxs {
+        margin: 0 2%;
+    }
+    .contentBoxs .loremBox {
+        width: 100%;
+    }
+    .loremBox:nth-of-type(1) {
+        position: relative;
+        top: -2em;
+        background-color: #576975;
+    }
+    .loremBox:nth-of-type(2) {
+        position: relative;
+        top: 1em;
+        background-color: #688293;
+    }
+    .loremBox:nth-of-type(3) {
+        position: relative;
+        top: -2em;
+        background-color: #576975;
+    }
+    .containerPerfil .contentPerfil {
+        display: block;
+        margin-left: 5em;
+    }
+    .contentPerfil .imgPerfil {
+        width: 70%;
+        padding-bottom: 3em;
+    }
+    .contentPerfil .textPerfil {
+        width: 70%;
+    }
+    .containerServices .contentServices {
+        margin: 0 2%;
+    }
+    .contentServices .loremServices:nth-of-type(3) {
+        display: none;
+    }
+    .containerContato .contentContato {
+        margin-left: 2em;
+    }
+    .contentContato form {
+        width: 100%;
+        margin: 0.3em 0;
+    }
+    form textarea {
+        padding-bottom: 1em;
+    }
+    .containerFooter .contentFooter {
+        margin-top: 4em;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+    header .toplogo {
+        margin: -2em 1.4em
+    }
+    .toplogo img {
+        width: 50%;
+    }
+    .toplogo a {
+        font-size: 2.5rem;
+    }
+    header nav {
+        position: relative;
+        top: 3em;
+        margin-right: 4em;
+        margin-top: 5em;
+        background-color: #688293;
+    }
+    nav a {
+        font-size: 1rem;
+        color: #fff;
+        line-height: 2.0;
+    }
+    body .containerMosaico {
+        margin-top: 2em;
+    }
+    .containerContato .contentContato {
+        margin-left: 3em;
+    }
+    .contentContato form {
+        width: 70%;
+    }
+    
+}
+
+
+
+
+  
+
+
+
+ 
+
+
+
+

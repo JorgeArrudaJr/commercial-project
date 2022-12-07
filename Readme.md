@@ -1,0 +1,2 @@
+Hello, I come to present another project and this time a more commercial project. It is a dental clinic page with images illustrating what the clinic is like, its services and professionals, in addition to the possibility for the user to contact the clinic through a form.
+Feel free to leave suggestions and feedback.
